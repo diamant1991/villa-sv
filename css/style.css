@@ -1,0 +1,199 @@
+body{
+	font-family: 'Times New Roman',sans-serif;
+}
+
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: block;
+	height: 0;
+}
+.wrapper{
+	background-color: #feeac0;
+	padding-bottom: 95px;
+}
+.container{
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+.header{
+	width: 100%;
+	background-color: #18698c;
+	height: 90px;
+	min-width: 1000px;
+}
+
+.logo{
+	background-image: url(../images/logo-bg.png);
+	background-repeat: no-repeat;
+	width:425px;
+	height: 367px;
+	position: absolute;
+	left: -110px;
+	top: -100px;
+	z-index: 2;
+}
+.nav{
+	margin-left: 320px;
+	padding-top: 35px;
+	font-size: 20px;
+	font-family: 'Times New Roman',sans-serif;
+	font-style: italic;
+}
+	.logo a{
+		position: relative;
+		left: 150px;
+		top: 120px;
+	}
+	.nav ul li{
+		float: left;
+		margin-right: 35px;
+	}
+		.nav ul li:last-child{
+			margin-right: 0;
+		}
+			.nav ul li a{
+				text-decoration: none;
+				color: #feeac0;
+				border-bottom:2px solid transparent;
+				-webkit-transition: 0.2s border-bottom ease-in-out;
+				-o-transition: 0.2s border-bottom ease-in-out;
+				transition: 0.2s border-bottom ease-in-out;
+			}
+				.nav ul li a:hover{
+					border-bottom:2px solid #a7b1a7;
+				}
+			.nav ul li a.price-link{
+				font-weight: bold;
+				color: #fff;
+			}
+				.nav ul li a.price-link:hover{
+					border-bottom: 2px solid transparent;
+				}
+.slide{
+	height: 410px;
+	background-color: #18698c;
+	border-radius: 0 0 20px 20px;
+	background-image: url(../images/slide.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+	.slide-img{
+		position: absolute;
+		right: -62px;
+		top: 8%;
+	}
+	.slide-text{
+		position: absolute;
+		left: 30px;
+		bottom:30px;
+		font-family: 'Times New Roman',sans-serif;
+		font-size: 20px;
+		color: #fefefe;
+		font-style: italic;
+	}
+
+.block{
+	padding-top: 20px;
+}
+.breadcrumbs{
+	margin-top: 30px;
+}
+	.breadcrumbs ul li{
+		display: inline-block;
+	}
+.icon-img{
+	width: 170px;
+	height: 165px;
+	background-repeat: no-repeat;
+}
+	.territory{
+		background-image: url(../images/ter.png);
+	}
+	.rooms{
+		background-image: url(../images/rooms.png);
+	}
+	.cabinet{
+		background-image: url(../images/cabin.png);
+	}
+	.barbecue{
+		background-image: url(../images/barbecue.png);
+	}
+	.fishing{
+		background-image: url(../images/fishing.png);
+	}
+.icon-block{
+	float: left;
+	margin: 10px 13px;
+}
+	.icon-block p{
+		text-align: center;
+		font-size: 24px;
+		font-weight: bold;
+		font-style: italic;
+		color: #3a3734;
+	}
+.left-text{
+	float: left;
+}
+.left-text>.text{
+	width: 260px;
+	height: 317px;
+	background: url(../images/bg-text-1.png);
+	padding: 10px;
+	font-size: 18px;
+	color: #3a3734;
+	font-style: italic;
+	margin-left: 100px;
+}
+.right-text{
+	float: left;
+	
+}
+.right-text>.text{
+	padding: 16px;
+	font-size: 18px;
+	color: #3a3734;
+	font-style: italic;
+	background: url(../images/bg-text-1.png) no-repeat 99% -6px;
+	width: 545px;
+	margin-left: 80px;
+}
+.content-text{
+	margin-top: 10px;
+}
+.footer-nav{
+	height: 50px;
+	background-color: #8bbbd4;
+}
+	.footer-nav ul li{
+		display: inline-block;
+		font-size: 18px;
+		margin-right: 30px;
+	}
+		.footer-nav ul li a{
+			text-decoration: none;
+			color: #18698c;
+			font-style: italic;
+		}
+			.footer-nav ul li a:hover{
+				text-decoration: underline;
+			}
+		.footer-nav nav{
+			position: relative;
+			float: right;
+			right: 50%;
+			margin-top: 17px;
+		}
+		.footer-nav nav ul{
+			  position: relative;
+			  float: left;
+			  left: 50%;
+			}
+.footer-bottom{
+	height: 150px;
+	background-color: #18698c;
+}
+
