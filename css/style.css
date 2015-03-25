@@ -11,6 +11,8 @@ body{
 .wrapper{
 	background-color: #feeac0;
 	padding-bottom: 95px;
+	min-height: 100%;
+	height: auto;
 }
 .container{
 	width: 1000px;
@@ -103,7 +105,26 @@ body{
 }
 	.breadcrumbs ul li{
 		display: inline-block;
+		font-size: 15px;
+		color: #3a3734;
+		font-family: 'Times New Roman',sans-serif;
+		font-style: italic;
 	}
+		.breadcrumbs ul li a{
+			color: #3a3734;
+			text-decoration: none;
+		}
+			.breadcrumbs ul li:last-child{
+				text-decoration: underline;
+			}
+			.bread-arrow{
+				display: inline-block;
+				width: 5px;
+				height: 5px;
+				background: url(../images/bread.png);
+				position: relative;
+				top: -1px;
+			}
 .icon-img{
 	width: 170px;
 	height: 165px;
@@ -196,4 +217,156 @@ body{
 	height: 150px;
 	background-color: #18698c;
 }
-
+.block{
+	float: left;
+	font-family: 'Times New Roman',sans-serif;
+	font-size: 18px;
+	font-style: italic;
+	color: #ffdebb;
+	margin-left: 43px;
+}
+.copyright{
+	font-size: 16px;
+	font-style: italic;
+	color: #ffdebb;
+	text-align: center;
+	margin-top: 15px;
+}
+.footer-bottom .container .block:first-child p span{
+	float: right;
+}
+	.footer-bottom .container .block:first-child,.footer-bottom .container .block:nth-child(3){
+		padding-top: 50px;
+	}
+.questions{
+	margin-top: 10px;
+}
+.ques-block{
+	margin-left: 110px;
+	padding-bottom: 25px;
+	margin-bottom: 10px;
+	padding-right: 10px;
+	background: url(../images/bg-comment.png)no-repeat;
+	background-position: 100% 100%;
+}
+.name{
+	font-size: 24px;
+	font-style: italic;
+	color: #18698c;
+}
+.date{
+	display: inline-block;
+	padding: 4px 5px;
+	font-size: 15px;
+	color: #feeac0;
+	background-color: #18698c;
+	font-style: italic;
+	-webkit-border-radius: 4px;
+	-moz-webkit-border-radius: 4px;
+	-ms-webkit-border-radius: 4px;
+	-o-webkit-border-radius: 4px;
+	border-radius: 4px;
+	margin-left: 5px;
+}
+.comment{
+	font-size: 18px;
+	font-weight: bold;
+	font-style: italic;
+	color: #3a3734;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.admin-comment span{
+	text-transform: uppercase;
+}
+.admin-comment{
+	font-size: 18px;
+	font-style: italic;
+	color: #3a3734;
+	margin-left: 15px;
+	margin-top: 20px;
+}
+.contacts-block h4,.maps h4{
+	font-size: 24px;
+	font-style: italic;
+	color: #18698c;
+}
+	.contacts-block p{
+		font-size: 18px;
+		font-style: italic;
+		color: #3a3734;
+		padding-left: 25px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+.contacts-block{
+	background: url(../images/bg-text-1.png)no-repeat;
+	width: 255px;
+	float: left;
+	background-position: 100% 100%;
+	padding-bottom: 20px;
+	padding-right: 10px;
+	margin-left: 110px;
+}
+.maps{
+	float: left;
+	margin-left: 30px;
+}
+.ymaps-map{
+	border: 1px solid #5f3d18 !important;
+}
+.maps-block{
+	margin-left: 10px !important;
+	margin-top: 5px !important;
+}
+.fishing-slide{
+	background-image: url(../images/fish.jpg);
+}
+.title{
+	font-size: 51px;
+	font-style: italic;
+	color: #fff;
+	position: absolute;
+	right: 40px;
+	bottom: 30px;
+}
+.main-gallery h4{
+	text-align: center;
+	font-size: 20px;
+	font-style: italic;
+	color: #18698c;
+}
+	.main-gallery h4 span{
+		font-weight: bold;
+		font-size: 24px;
+	}
+.photo{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 104px;
+	height: 104px;
+	background: url(../images/blue.png);
+}
+	.photo-bbg{
+		background: url(../images/bg-bbq.png);
+	}
+.photo-block{
+	float: left;
+	margin-left: 25px;
+	margin-bottom: 25px;
+}
+.gallery{
+	width: 630px;
+	margin: 25px auto;
+}
+.gallery .photo-block:first-child, .gallery .photo-block:nth-child(6){
+	margin-left: 0;
+}
+.main-gallery{
+	margin-top: 20px;
+	padding-bottom: 80px;
+}
+.icon-gallery{
+	margin-top: 5px;
+}
