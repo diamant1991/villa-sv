@@ -9,10 +9,21 @@ body{
 	height: 0;
 }
 .wrapper{
-	background-color: #feeac0;
+	background: #bcdbf0; /* Old browsers */
+	background: -moz-linear-gradient(top,  #bcdbf0 0%, #fffff9 10%, #ffecc5 29%, #feeac0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bcdbf0), color-stop(10%,#fffff9), color-stop(29%,#ffecc5), color-stop(100%,#feeac0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #bcdbf0 0%,#fffff9 10%,#ffecc5 29%,#feeac0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #bcdbf0 0%,#fffff9 10%,#ffecc5 29%,#feeac0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #bcdbf0 0%,#fffff9 10%,#ffecc5 29%,#feeac0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #bcdbf0 0%,#fffff9 10%,#ffecc5 29%,#feeac0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bcdbf0', endColorstr='#feeac0',GradientType=0 ); /* IE6-9 */
 	padding-bottom: 95px;
 	min-height: 100%;
 	height: auto;
+	min-width: 1000px;
+}
+footer{
+	min-width: 1000px;
 }
 .container{
 	width: 1000px;
@@ -34,7 +45,7 @@ body{
 	position: absolute;
 	left: -110px;
 	top: -100px;
-	z-index: 2;
+	z-index: 3;
 }
 .nav{
 	margin-left: 320px;
@@ -81,6 +92,7 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
+	z-index: 2;
 }
 	.slide-img{
 		position: absolute;
@@ -155,19 +167,29 @@ body{
 		font-weight: bold;
 		font-style: italic;
 		color: #3a3734;
+		text-decoration: none;
+		border-bottom: 1px solid transparent;
 	}
+	.icon-block a{
+		text-decoration: none;
+	}
+		.icon-block a:hover p{
+			text-decoration: underline;
+
+		}
 .left-text{
 	float: left;
 }
 .left-text>.text{
 	width: 260px;
-	height: 317px;
-	background: url(../images/bg-text-1.png);
+	background: url(../images/bg-text-1.png) no-repeat 99% 99%;
 	padding: 10px;
 	font-size: 18px;
 	color: #3a3734;
 	font-style: italic;
 	margin-left: 100px;
+	padding-bottom: 30px;
+	padding-right: 20px;
 }
 .right-text{
 	float: left;
@@ -178,8 +200,10 @@ body{
 	font-size: 18px;
 	color: #3a3734;
 	font-style: italic;
-	background: url(../images/bg-text-1.png) no-repeat 99% -6px;
-	width: 545px;
+	background: url(../images/bg-text-1.png) no-repeat 99% 99%;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	width: 547px;
 	margin-left: 80px;
 }
 .content-text{
@@ -322,6 +346,18 @@ body{
 .fishing-slide{
 	background-image: url(../images/fish.jpg);
 }
+.bbq-slide{
+	background-image: url(../images/bbq.jpg);
+}
+.cabin-slide{
+	background-image: url(../images/cabin.jpg);
+}
+.number-slide{
+	background-image: url(../images/number.jpg);
+}
+.ter-slide{
+	background-image: url(../images/ter.jpg);
+}
 .title{
 	font-size: 51px;
 	font-style: italic;
@@ -351,6 +387,15 @@ body{
 	.photo-bbg{
 		background: url(../images/bg-bbq.png);
 	}
+	.photo-cabine{
+		background: url(../images/bg-cabine.png);
+	}
+	.photo-number{
+		background: url(../images/bg-number.png);
+	}
+	.photo-ter{
+		background: url(../images/bg-ter.png);
+	}
 .photo-block{
 	float: left;
 	margin-left: 25px;
@@ -360,7 +405,7 @@ body{
 	width: 630px;
 	margin: 25px auto;
 }
-.gallery .photo-block:first-child, .gallery .photo-block:nth-child(6){
+.gallery .photo-block:first-child, .gallery .photo-block:nth-child(6),.gallery-cabine .photo-block:nth-child(4){
 	margin-left: 0;
 }
 .main-gallery{
@@ -369,4 +414,52 @@ body{
 }
 .icon-gallery{
 	margin-top: 5px;
+}
+.gallery-cabine{
+	width: 375px;
+}
+.gallery-cabine .photo-block:nth-child(6){
+	margin-left: 25px;
+}
+.scheme-img{
+	width: 504px;
+	height: 358px;
+	background: url(../images/scheme.png);
+	position: relative;
+	margin-top: 25px;
+}
+.scheme {
+	font-size: 18px;
+	font-style: italic;
+	color: #3a3734;
+}
+b{
+	font-weight: bold;
+}
+.main-gallery-cabine, .scheme{
+	float: left;
+}
+.main-gallery-cabine{
+	margin-left: 50px;
+	margin-top: 30px;
+}
+.main-content{
+	padding-top: 30px;
+}
+	.main-gallery-cabine h4{
+		text-align: left;
+	}
+.shadow{
+	width: 1170px;
+	height: 68px;
+	background: url(../images/shadow.png)no-repeat 1px 1px;
+	position: absolute;
+	margin-top: -37px;
+	margin-left: -35px;
+}
+@media (max-width: 1300px){
+	.shadow{
+		width: 1000px;
+		margin-left: 0;
+	}
 }
