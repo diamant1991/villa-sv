@@ -17,7 +17,7 @@ body{
 	background: -ms-linear-gradient(top,  #bcdbf0 0%,#fffff9 10%,#ffecc5 29%,#feeac0 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #bcdbf0 0%,#fffff9 10%,#ffecc5 29%,#feeac0 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bcdbf0', endColorstr='#feeac0',GradientType=0 ); /* IE6-9 */
-	padding-bottom: 95px;
+	padding-bottom: 50px;
 	min-height: 100%;
 	height: auto;
 	min-width: 1000px;
@@ -112,8 +112,9 @@ footer{
 .block{
 	padding-top: 20px;
 }
-.breadcrumbs{
-	margin-top: 30px;
+.breadcrumbs {
+	  margin-top: 33px;
+	  padding-left: 26px;
 }
 	.breadcrumbs ul li{
 		display: inline-block;
@@ -169,6 +170,7 @@ footer{
 		color: #3a3734;
 		text-decoration: none;
 		border-bottom: 1px solid transparent;
+		margin-top: 6px;
 	}
 	.icon-block a{
 		text-decoration: none;
@@ -204,7 +206,11 @@ footer{
 	padding-bottom: 20px;
 	padding-right: 20px;
 	width: 547px;
-	margin-left: 80px;
+	margin-left: 43px;
+}
+.left-text>.text, .right-text>.text{
+	position: relative;
+	top: -20px;
 }
 .content-text{
 	margin-top: 10px;
@@ -264,10 +270,12 @@ footer{
 	}
 .questions{
 	margin-top: 10px;
+	padding-bottom: 100px;
 }
 .ques-block{
 	margin-left: 110px;
-	padding-bottom: 25px;
+	padding-bottom: 34px;
+	margin-top: 4px;
 	margin-bottom: 10px;
 	padding-right: 10px;
 	background: url(../images/bg-comment.png)no-repeat;
@@ -298,7 +306,7 @@ footer{
 	font-style: italic;
 	color: #3a3734;
 	margin-left: 15px;
-	margin-top: 5px;
+	margin-top: 4px;
 }
 .admin-comment span{
 	text-transform: uppercase;
@@ -308,7 +316,7 @@ footer{
 	font-style: italic;
 	color: #3a3734;
 	margin-left: 15px;
-	margin-top: 20px;
+	margin-top: 21px;
 }
 .contacts-block h4,.maps h4{
 	font-size: 24px;
@@ -409,8 +417,8 @@ footer{
 	margin-left: 0;
 }
 .main-gallery{
-	margin-top: 20px;
-	padding-bottom: 80px;
+	margin-top: 11px;
+	padding-bottom: 98px;
 }
 .icon-gallery{
 	margin-top: 5px;
@@ -432,6 +440,7 @@ footer{
 	font-size: 18px;
 	font-style: italic;
 	color: #3a3734;
+	padding-left: 32px;
 }
 b{
 	font-weight: bold;
@@ -440,8 +449,8 @@ b{
 	float: left;
 }
 .main-gallery-cabine{
-	margin-left: 50px;
-	margin-top: 30px;
+	margin-left: 48px;
+	margin-top: 34px;
 }
 .main-content{
 	padding-top: 30px;
@@ -456,6 +465,19 @@ b{
 	position: absolute;
 	margin-top: -37px;
 	margin-left: -35px;
+}
+.right-text img{
+	position: relative;
+	right: 46px;
+}
+.other-content{
+    padding-top: 22px;
+}
+.other-wrapper{
+	padding-bottom: 8px;
+}
+.other-questions{
+	padding-bottom: 80px;
 }
 @media (max-width: 1300px){
 	.shadow{
